@@ -74,6 +74,9 @@ namespace NetLab_6
                     Text = studyPlan.Student.ToString()
                 };
                 listViewItem.SubItems.Add(studyPlan.Subject.ToString());
+                listViewItem.SubItems.Add(studyPlan.Subject.Lectures.ToString());
+                listViewItem.SubItems.Add(studyPlan.Subject.Practices.ToString());
+                listViewItem.SubItems.Add(studyPlan.Subject.LaboratoryWorks.ToString());
                 listViewStudyPlans.Items.Add(listViewItem);
             }
         }
@@ -238,7 +241,7 @@ namespace NetLab_6
             {
                 try
                 {
-                    var subject = listViewStudyPlans.SelectedItems[0].Tag as Subject;
+                    var subject = listViewSubjects.SelectedItems[0].Tag as Subject;
                     if (subject != null)
                     {
                         _facultatives.RemoveSubject(subject.SubjectId);

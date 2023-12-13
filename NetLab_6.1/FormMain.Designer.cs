@@ -194,6 +194,7 @@
             this.listViewStudents.TabIndex = 1;
             this.listViewStudents.UseCompatibleStateImageBehavior = false;
             this.listViewStudents.View = System.Windows.Forms.View.Details;
+            this.listViewStudents.KeyUp += new System.Windows.Forms.KeyEventHandler(this.listViewStudents_KeyUp);
             // 
             // columnHeaderStudent
             // 
@@ -225,6 +226,7 @@
             this.listViewSubjects.TabIndex = 2;
             this.listViewSubjects.UseCompatibleStateImageBehavior = false;
             this.listViewSubjects.View = System.Windows.Forms.View.Details;
+            this.listViewSubjects.KeyUp += new System.Windows.Forms.KeyEventHandler(this.listViewSubjects_KeyUp);
             // 
             // columnHeaderSubject
             // 
@@ -260,6 +262,7 @@
             this.listViewStudyPlans.TabIndex = 2;
             this.listViewStudyPlans.UseCompatibleStateImageBehavior = false;
             this.listViewStudyPlans.View = System.Windows.Forms.View.Details;
+            this.listViewStudyPlans.KeyUp += new System.Windows.Forms.KeyEventHandler(this.listViewStudyPlan_KeyUp);
             // 
             // columnHeaderStudentFio
             // 
