@@ -65,7 +65,7 @@
 
         public override string ToString()
         {
-            return $"Фамилия: {LastName}\r\nИмя: {FirstName}\r\nОтчество: {MiddleName}\r\nАдрес: {Adress}\r\n";
+            return $"{LastName} \r\n{FirstName} \r\n{MiddleName} \r\nАдрес: {Adress}\r\n";
         }
     }
 }

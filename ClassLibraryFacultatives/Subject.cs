@@ -66,7 +66,7 @@ namespace ClassLibraryFacultatives
         public override string ToString()
         {
             return
-                $"Название: {Title}\r\nЛекции: {Lectures}\r\nПрактики:{Practices}\r\nЛабораторные:{LaboratoryWorks}\r\n";
+                $"{Title} \r\nЛекции:{Lectures} \r\nПрактики:{Practices} \r\nЛабораторные:{LaboratoryWorks}\r\n";
         }
     }
 }
